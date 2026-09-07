@@ -82,20 +82,20 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.3125em;
 	opacity: 0.72;
 }
 
 h3 {
-	font-size: 1.3125em;
+	font-size: 1.2125em;
 }
 
 h4 {
-	font-size: 1.25em;
+	font-size: 1.125em;
 }
 
 h5 {
-	font-size: 1.125em;
+	font-size: 1.06125em;
 }
 
 h6 {
@@ -140,7 +140,7 @@ a {
 hr {
 	border: none;
 	border-top: 1px dotted var(--grey-lite);
-	margin: 1em;
+	margin: 1.5em 0;
 }
 
 body > header {
@@ -176,7 +176,7 @@ article > section {
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	gap: calc(var(--gap) / 2);
+	gap: calc(var(--gap) / 1.5);
 
 	border-top: 1px dotted var(--grey-lite);
 	padding: 0.5em 0 0;
@@ -184,7 +184,7 @@ article > section {
 }
 
 article > section > header {
-	flex: 0 0 35%;
+	flex: 0 0 32.5%;
 }
 
 article > section > header > h2 {
@@ -199,18 +199,19 @@ article > section > ul {
 	flex: 0 0 20%;
 
 	font-family: var(--mono-font);
-	font-size: 1.125em;
+	font-size: 1.06125em;
 	padding: 0;
 	list-style: none;
 }
 
 article > section > ul > li.location {
 	opacity: 0.64;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.25em;
 }
 
 article > section > ul > li.start-date,
 article > section > ul > li.end-date {
+	text-transform: uppercase;
 	font-weight: bold;
 }
 
@@ -218,10 +219,20 @@ article > section > ul > li.start-date::after {
 	content: "to";
 	font-style: italic;
 	opacity: 0.5;
+	text-transform: none;
 }
 
 article > section > p {
-	flex: 0 0 42%;
+	flex: 0 0 45%;
+}
+
+article.cover-letter {
+	padding: 1in;
+}
+
+article.cover-letter p {
+	line-height: 1.75;
+	margin: 0.3125in 0.25in;
 }
 
 /* body::before { */
