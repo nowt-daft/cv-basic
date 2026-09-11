@@ -36,6 +36,7 @@
 
 :root {
 	--black: #241F31;
+	--grey-dark: #333;
 	--grey: #5E5C64;
 	--grey-lite: #9A9996;
 
@@ -83,8 +84,8 @@ h1 {
 }
 
 h2 {
+	color: var(--grey-dark);
 	font-size: 1.3125em;
-	opacity: 0.72;
 }
 
 h3 {
@@ -113,8 +114,8 @@ h2, h4, h6 {
 }
 
 h3, h5 {
+	color: var(--grey);
 	text-transform: none;
-	opacity: 0.5;
 }
 
 p,
@@ -206,7 +207,7 @@ article > section > ul {
 }
 
 article > section > ul > li.location {
-	opacity: 0.64;
+	color: var(--grey);
 	margin-bottom: 0.25em;
 }
 
@@ -218,9 +219,9 @@ article > section > ul > li.end-date {
 }
 
 article > section > ul > li.start-date::after {
+	color: var(--grey-lite);
 	content: "to";
 	font-style: italic;
-	opacity: 0.5;
 	text-transform: none;
 }
 
