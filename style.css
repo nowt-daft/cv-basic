@@ -213,9 +213,9 @@ article > section > ul > li.location {
 
 article > section > ul > li.start-date,
 article > section > ul > li.end-date {
+	color:var(--grey-dark);
 	font-weight: bold;
 	text-transform: uppercase;
-	opacity: 0.85;
 }
 
 article > section > ul > li.start-date::after {
