@@ -36,8 +36,8 @@
 
 :root {
 	--black: #241F31;
-	--grey-dark: #333;
-	--grey: #5E5C64;
+	--grey-dark: #373a35;
+	--grey: #595760;
 	--grey-lite: #9A9996;
 
 	--serif-font: "Instrument", Serif;
@@ -85,7 +85,7 @@ h1 {
 
 h2 {
 	color: var(--grey-dark);
-	font-size: 1.3125em;
+	font-size: 1.5em;
 }
 
 h3 {
@@ -122,8 +122,8 @@ p,
 address,
 blockquote,
 ul, ol {
-	margin: 0.25em 0 0.5em;
-	line-height: 1.25;
+	margin: 0.5em 0;
+	line-height: 1.3125;
 }
 
 address {
@@ -150,7 +150,7 @@ body > header {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: flex-start;
-	gap: var(--gap);
+	gap: calc(1.5 * var(--gap));
 
 	/* border-top: 1px dotted var(--grey-lite); */
 	/* padding: 0.5em 0 0; */
@@ -159,26 +159,27 @@ body > header {
 body > header > hgroup > h1 {
 	border: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 0.125em;
 
-	font-size: 3em;
+	font-size: 3.75em;
 }
 
 body > header > address {
-	text-align: right;
+	margin-top: 1em;
 	font-family: var(--mono-font);
+	text-align: right;
 }
 
-article > header > h1 {
-	display: none;
-}
+/* article > header > h1 { */
+/* 	display: none; */
+/* } */
 
 article > section {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	gap: calc(var(--gap) / 1.5);
+	gap: var(--gap);
 
 	border-top: 1px dotted var(--grey-lite);
 	padding: 0.5em 0 0;
@@ -198,7 +199,7 @@ article > section > header > h3 {
 }
 
 article > section > ul {
-	flex: 0 0 20%;
+	flex: 0 0 calc(22.5% - var(--gap) * 2);
 
 	font-family: var(--mono-font);
 	font-size: 1.06125em;
@@ -207,7 +208,7 @@ article > section > ul {
 }
 
 article > section > ul > li.location {
-	color: var(--grey);
+	color: var(--grey-lite);
 	margin-bottom: 0.25em;
 }
 
@@ -226,7 +227,7 @@ article > section > ul > li.start-date::after {
 }
 
 article > section > p {
-	flex: 0 0 43%;
+	flex: 0 0 45%;
 }
 
 article.cover-letter {
@@ -238,15 +239,16 @@ article.cover-letter p {
 	margin: 0.3125in 0.25in;
 }
 
-/* body::before { */
-/* 	content: ""; */
-/**/
-/* 	position: fixed; */
-/* 	top: 0; */
-/* 	left: 0; */
-/* 	right: 0; */
-/* 	bottom: 0; */
-/* 	z-index: -1; */
-/**/
-/* 	background-color: gainsboro; */
-/* } */
+main > article > footer > ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	gap: var(--gap);
+
+	list-style: none;
+}
+
+main > article > footer > ul > li {
+	flex: 1 0 33%;
+}
