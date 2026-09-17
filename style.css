@@ -109,13 +109,13 @@ h6 {
 /* 	padding: 0.5em 0 0; */
 /* } */
 
-h2, h4, h6 {
+h2, h6 {
 	font-style: italic;
 }
 
-h3, h5 {
-	color: var(--grey);
+h3, h4, h5 {
 	text-transform: none;
+	color: var(--grey);
 }
 
 p,
@@ -127,6 +127,7 @@ ul, ol {
 }
 
 address {
+	color: var(--grey-dark);
 	font-style: normal;
 }
 
@@ -239,6 +240,16 @@ article.cover-letter p {
 	margin: 0.3125in 0.25in;
 }
 
+main > article > footer h3 {
+	color: var(--grey-dark);
+}
+
+main > article > footer h3,
+main > article > footer h4 {
+	margin: 0.125em 0;
+}
+
+
 main > article > footer > ul {
 	display: flex;
 	flex-flow: row nowrap;
@@ -251,4 +262,8 @@ main > article > footer > ul {
 
 main > article > footer > ul > li {
 	flex: 1 0 33%;
+}
+
+main > article > footer address {
+	font-size: 1.25rem;
 }
