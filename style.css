@@ -75,8 +75,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	color: var(--black);
 	font-family: var(--mono-font);
-	text-transform: uppercase;
 	margin: 0.5em 0;
+	text-transform: uppercase;
+	line-height: 1.125 !important;
 }
 
 h1 {
